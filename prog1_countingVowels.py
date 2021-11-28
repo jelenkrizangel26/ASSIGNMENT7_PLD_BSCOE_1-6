@@ -9,5 +9,19 @@
 
 #STEPS:
 #1. Ask for the sentence:
-into = print("Hello, I am Krizzy and I will help you to count the vowels, consonants and words in your sentence")
+print("Hello, I am Krizzy and I will help you to count the vowels, consonants and words in your sentence")
 sntnce = input("Please put your sentence here: ")
+
+#2. Let's count the number of words, consonants and vowels:
+wordsNum = len(sntnce.split())
+vowelsNum = 0
+consonantsNum = 0
+spaceNum = 0
+
+for count in sntnce:
+    if count == "A" or count == "E" or count == "I" or count == "O" or count == "U" or \
+        count == "a" or count == "e" or count == "i" or count == "o" or count == "u":
+        vowelsNum = vowelsNum + 1
+#3. Display
+print(f"The number of words: {wordsNum}")
+print(f"The number of words: {vowelsNum}")
