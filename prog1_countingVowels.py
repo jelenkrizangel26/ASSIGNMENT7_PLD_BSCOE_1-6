@@ -9,8 +9,8 @@
 
 #STEPS:
 #1. Ask for the sentence:
-print("Hello, I am Krizzy and I will help you to count the vowels, consonants and words in your sentence")
-sntnce = input("Please put your sentence here: ")
+print("Hello, I am \33[3m\33[91mKrizzy\33[0m and I will help you to count the \33[92mvowels\33[0m, \33[93mconsonants\33[0m and \33[94mwords\33[0m in your sentence\U0001F607.")
+sntnce = input("\n\33[94mPlease put your sentence here\33[0m: ")
 
 #2. Let's count the number of words, consonants and vowels:
 wordsNum = len(sntnce.split())
@@ -28,6 +28,6 @@ for count in sntnce:
         consonantsNum = consonantsNum + 1
 
 #3. Display
-print(f"The number of words: {wordsNum}")
-print(f"The number of vowels: {vowelsNum}")
-print(f"The number of consonants: {consonantsNum}")
+print(f"\33[92mThe number of words\33[0m: \33[35m{wordsNum}\33[0m")
+print(f"\33[92mThe number of vowels\33[0m: \33[35m{vowelsNum}\33[0m")
+print(f"\33[92mThe number of consonants\33[0m: \33[35m{consonantsNum}\33[0m")
