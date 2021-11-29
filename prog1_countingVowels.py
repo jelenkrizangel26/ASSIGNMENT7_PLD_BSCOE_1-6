@@ -22,6 +22,12 @@ for count in sntnce:
     if count == "A" or count == "E" or count == "I" or count == "O" or count == "U" or \
         count == "a" or count == "e" or count == "i" or count == "o" or count == "u":
         vowelsNum = vowelsNum + 1
+    elif count == " ":
+        spaceNum = spaceNum + 1
+    else:
+        consonantsNum = consonantsNum + 1
+
 #3. Display
 print(f"The number of words: {wordsNum}")
-print(f"The number of words: {vowelsNum}")
+print(f"The number of vowels: {vowelsNum}")
+print(f"The number of consonants: {consonantsNum}")
