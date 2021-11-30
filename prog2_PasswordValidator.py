@@ -41,15 +41,7 @@ def main():
 
     else:
         print("Sorry, it seems like you entered an invalid password.")
-        if digit and up and number and character == False:
-            print("\nYour password must be gretater than 15 letters and contains at least one number, captail letter, and special characters")
-        
-
-
-digit = len(password) < 15
-up = (char.isupper() for char in password)
-number = (char.isdigit() for char in password)
-character = (char in characters for char in password)
+        print("\nYour password must be gretater than 15 letters and contains at least one number, captail letter, and special characters")
 
 main()
 
