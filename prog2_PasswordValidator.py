@@ -21,7 +21,6 @@ def passwordValid(password):
     val = True
 
     if len(password) < 15: #a. Greater than 15 letters
-        print("Your password must be gretater than 15 letters.") 
         val = False
 
     if not any(char.isupper() for char in password): #b. Have at least one capital letter
@@ -36,6 +35,23 @@ def passwordValid(password):
     if val:
         return val
 
+def main():
+    if (passwordValid(password)):
+        print("Welcome! Your password is valid.")
+
+    else:
+        print("Sorry, it seems like you entered an invalid password.")
+        if digit and up and number and character == False:
+            print("\nYour password must be gretater than 15 letters and contains at least one number, captail letter, and special characters")
+        
+
+
+digit = len(password) < 15
+up = (char.isupper() for char in password)
+number = (char.isdigit() for char in password)
+character = (char in characters for char in password)
+
+main()
 
 
 
